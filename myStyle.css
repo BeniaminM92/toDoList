@@ -56,15 +56,21 @@ body {
     padding: 0;
 }
 
-.listEntry {
+.list-entry {
     padding: 10px;
     border: 1px solid #ddd;
     margin-bottom: 10px;
     border-radius: 5px;
     transition: background-color 0.3s, text-decoration 0.3s;
 }
+/*{*/
+/*    display: flex; !* Flexbox für horizontale Ausrichtung *!*/
+/*    align-items: center; !* Vertikale Zentrierung *!*/
+/*    justify-content: flex-start; !* Links ausrichten *!*/
+/*    margin-bottom: 10px;*/
+/*}*/
 
-.listEntry:hover {
+.list-entry:hover {
     background-color: #f1f1f1;
 }
 
@@ -74,7 +80,12 @@ body {
     color: #6c757d;
 }
 
-.deleteBtn {
+.entry-checkbox {
+    margin-right: 10px; /* Abstand zum Text */
+    cursor: pointer;
+}
+
+.delete-btn {
     background-color: red;
     color: white;
     border: none;
@@ -85,6 +96,20 @@ body {
     text-align: right;
 }
 
-.deleteBtn:hover {
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+#clearAllBtn {
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#clearAllBtn:hover {
     background-color: darkred;
 }
